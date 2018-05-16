@@ -11,11 +11,15 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Laundry Tool 2.0 Support" Type="Folder"/>
+		<Item Name="Laundry Tool 2.0 Support" Type="Folder" URL="../Laundry Tool 2.0 Support">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Common" Type="Folder" URL="../../../Common">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Laundry Tool 1.0 Support" Type="Folder"/>
+		<Item Name="Laundry Tool 1.0 Support" Type="Folder" URL="../Laundry Tool 1.0 Support">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="VALEW" Type="Folder" URL="../../../Automation/Product Specific/Clothes Care/2015 VA Washer/Product Testcode/VALEW">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -25,10 +29,9 @@
 		<Item Name="Laundry Tool 2_0.ini" Type="Document" URL="../Laundry Tool 2_0.ini"/>
 		<Item Name="TL24 Tool Main.vi" Type="VI" URL="../TL24 Tool Main.vi"/>
 		<Item Name="2015 VA Washer.lvlib" Type="Library" URL="../../../Automation/Product Specific/Clothes Care/2015 VA Washer/Projects/2015 VA Washer.lvlib"/>
-		<Item Name="FL24 Dryer Tool Main.vi" Type="VI" URL="/C/GitHome/MyWork/TL24 Tool/FL24 Dryer Tool Main.vi"/>
-		<Item Name="FL24 Washer Tool Main.vi" Type="VI" URL="../FL24 Washer Tool Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
 				<Item Name="DAQmx Control Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Control Task.vi"/>
@@ -232,7 +235,10 @@
 				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
+				<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
@@ -258,6 +264,8 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="Write To Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (I64).vi"/>
+				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="DAQmx Create Channel (CI-Duty Cycle).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-Duty Cycle).vi"/>
 				<Item Name="DAQmx Create Channel (CI-Velocity-Angular).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-Velocity-Angular).vi"/>
@@ -307,11 +315,16 @@
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
-				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Flash_Results.ctl" Type="VI" URL="../../JL Dryer Tool/JL Dryer Tool Support/type defs/Flash_Results.ctl"/>
+			<Item Name="ERD Read Data Out.ctl" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/type defs/ERD Read Data Out.ctl"/>
+			<Item Name="ERD Read Data In.ctl" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/type defs/ERD Read Data In.ctl"/>
+			<Item Name="Data Type.ctl" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/type defs/Data Type.ctl"/>
+			<Item Name="Source_Destination.ctl" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/type defs/Source_Destination.ctl"/>
+			<Item Name="GEA2 Read ERD.vi" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/core/GEA2 Read ERD.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -327,59 +340,6 @@
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Counts to Triac Direction.vi" Type="VI" URL="../Laundry Tool 1.0 Support/subVIs/Counts to Triac Direction.vi"/>
-			<Item Name="Cycle_Diag_Table_Read_TL24.vi" Type="VI" URL="../Laundry Tool 1.0 Support/subVIs/Cycle_Diag_Table_Read_TL24.vi"/>
-			<Item Name="Fault_Seq_Read.vi" Type="VI" URL="../Laundry Tool 1.0 Support/subVIs/Fault_Seq_Read.vi"/>
-			<Item Name="Fault_Table_Read.vi" Type="VI" URL="../Laundry Tool 1.0 Support/subVIs/Fault_Table_Read.vi"/>
-			<Item Name="FGV_GEA2_Ref.vi" Type="VI" URL="../Laundry Tool 1.0 Support/subVIs/FGV_GEA2_Ref.vi"/>
-			<Item Name="GEA2_Reregister.vi" Type="VI" URL="../Laundry Tool 1.0 Support/subVIs/GEA2_Reregister.vi"/>
-			<Item Name="HEUI_Event_FGV.vi" Type="VI" URL="../Laundry Tool 1.0 Support/subVIs/HEUI_Event_FGV.vi"/>
-			<Item Name="Cont_Send_States.ctl" Type="VI" URL="../Laundry Tool 1.0 Support/type defs/Cont_Send_States.ctl"/>
-			<Item Name="Cycle_Diag_Buffer_Status.ctl" Type="VI" URL="../Laundry Tool 1.0 Support/type defs/Cycle_Diag_Buffer_Status.ctl"/>
-			<Item Name="ERD_Graph.ctl" Type="VI" URL="../Laundry Tool 1.0 Support/type defs/ERD_Graph.ctl"/>
-			<Item Name="ERD_Graph_All.ctl" Type="VI" URL="../Laundry Tool 1.0 Support/type defs/ERD_Graph_All.ctl"/>
-			<Item Name="Fault_Buffer_Status.ctl" Type="VI" URL="../Laundry Tool 1.0 Support/type defs/Fault_Buffer_Status.ctl"/>
-			<Item Name="Fault_Table_Info.ctl" Type="VI" URL="../Laundry Tool 1.0 Support/type defs/Fault_Table_Info.ctl"/>
-			<Item Name="Version.ctl" Type="VI" URL="../Laundry Tool 1.0 Support/type defs/Version.ctl"/>
-			<Item Name="ACK Subscriptions Publications.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/ACK Subscriptions Publications.vi"/>
-			<Item Name="Build_ERD_Header_String_Array.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Build_ERD_Header_String_Array.vi"/>
-			<Item Name="Control_Cont_Send_Brass.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Control_Cont_Send_Brass.vi"/>
-			<Item Name="Control_DAQ_Loop_Brass.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Control_DAQ_Loop_Brass.vi"/>
-			<Item Name="Control_ERD_Loop_Brass.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Control_ERD_Loop_Brass.vi"/>
-			<Item Name="Control_GEA2_Loop_Brass.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Control_GEA2_Loop_Brass.vi"/>
-			<Item Name="Convert_ERDs_Brass.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Convert_ERDs_Brass.vi"/>
-			<Item Name="Cycle_History_Logging.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Cycle_History_Logging.vi"/>
-			<Item Name="Digital IO to Plot.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Digital IO to Plot.vi"/>
-			<Item Name="ERD_Read_List_Builder.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/ERD_Read_List_Builder.vi"/>
-			<Item Name="Error_Control_Brass.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Error_Control_Brass.vi"/>
-			<Item Name="Fault_Logging.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Fault_Logging.vi"/>
-			<Item Name="Faults_To_String_Array.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Faults_To_String_Array.vi"/>
-			<Item Name="GEA2 Log Filter.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/GEA2 Log Filter.vi"/>
-			<Item Name="Get User Filename and Path.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Get User Filename and Path.vi"/>
-			<Item Name="Graph ERD Read List_Brass.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Graph ERD Read List_Brass.vi"/>
-			<Item Name="Initialize_Control_Brass.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Initialize_Control_Brass.vi"/>
-			<Item Name="Open_Create__Log_File.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Open_Create__Log_File.vi"/>
-			<Item Name="TimeStamp to String Array.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/TimeStamp to String Array.vi"/>
-			<Item Name="Update Graphs_Brass.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Update Graphs_Brass.vi"/>
-			<Item Name="Write _To_CSV_File.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Write _To_CSV_File.vi"/>
-			<Item Name="Write _To_TXT_File.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Write _To_TXT_File.vi"/>
-			<Item Name="Write_Header_FGV.vi" Type="VI" URL="../Laundry Tool 2.0 Support/sub vis2/Write_Header_FGV.vi"/>
-			<Item Name="All_Bundled_Data_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/All_Bundled_Data_Brass.ctl"/>
-			<Item Name="Cont_Send_States_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/Cont_Send_States_Brass.ctl"/>
-			<Item Name="CSV_File_String_Arrays.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/CSV_File_String_Arrays.ctl"/>
-			<Item Name="DAQ_Control_Command_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/DAQ_Control_Command_Brass.ctl"/>
-			<Item Name="DAQ_States_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/DAQ_States_Brass.ctl"/>
-			<Item Name="Diagnostics_Table.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/Diagnostics_Table.ctl"/>
-			<Item Name="ERD_Always_Show_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/ERD_Always_Show_Brass.ctl"/>
-			<Item Name="ERD_Data_Loop_Control_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/ERD_Data_Loop_Control_Brass.ctl"/>
-			<Item Name="ERD_Loop_Control_Command_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/ERD_Loop_Control_Command_Brass.ctl"/>
-			<Item Name="ERD_Loop_States_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/ERD_Loop_States_Brass.ctl"/>
-			<Item Name="Error_Command_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/Error_Command_Brass.ctl"/>
-			<Item Name="Fault Table Array.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/Fault Table Array.ctl"/>
-			<Item Name="GEA2_Control_Command_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/GEA2_Control_Command_Brass.ctl"/>
-			<Item Name="Select _Graph_Brass.ctl" Type="VI" URL="../Laundry Tool 2.0 Support/type defs2/Select _Graph_Brass.ctl"/>
-			<Item Name="Fault_ID_Parse_FL24_Dryer.vi" Type="VI" URL="../Laundry Tool 1.0 Support/subVIs/Fault_ID_Parse_FL24_Dryer.vi"/>
-			<Item Name="Cycle_Diag.ctl" Type="VI" URL="../Laundry Tool 1.0 Support/type defs/Cycle_Diag.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="TL24 Tool EXE" Type="EXE">
@@ -409,7 +369,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref"></Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Laundry Tool 2.0 Support/icon/Washing-machine.ico</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[0].itemID" Type="Str">{77BE7EFE-FCDB-45F8-8EC1-66930551E61E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
