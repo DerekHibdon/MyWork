@@ -335,11 +335,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Flash_Results.ctl" Type="VI" URL="../../JL Dryer Tool/JL Dryer Tool Support/type defs/Flash_Results.ctl"/>
-			<Item Name="ERD Read Data Out.ctl" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/type defs/ERD Read Data Out.ctl"/>
-			<Item Name="Data Type.ctl" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/type defs/Data Type.ctl"/>
-			<Item Name="Source_Destination.ctl" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/type defs/Source_Destination.ctl"/>
-			<Item Name="ERD Read Data In.ctl" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/type defs/ERD Read Data In.ctl"/>
-			<Item Name="GEA2 Read ERD.vi" Type="VI" URL="/Common/LabVIEW GEA2 Toolkit/LabVIEW_GEA2_Toolkit.lvlibp/core/GEA2 Read ERD.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="TL24 Tool EXE" Type="EXE">
