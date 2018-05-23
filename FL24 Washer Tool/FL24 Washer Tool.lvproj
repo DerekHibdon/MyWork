@@ -334,7 +334,6 @@
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Flash_Results.ctl" Type="VI" URL="../../JL Dryer Tool/JL Dryer Tool Support/type defs/Flash_Results.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="TL24 Tool EXE" Type="EXE">
