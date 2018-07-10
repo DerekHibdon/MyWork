@@ -77,7 +77,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{9EAEB78A-1A96-44DF-BAE2-7548CED43F42}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Get Latest NewFI.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/builds/NI_AB_PROJECTNAME/Get Latest NewFI.exe</Property>
@@ -167,7 +167,7 @@
 				<Property Name="INST_buildSpecName" Type="Str">Get Latest NewFI Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{72C65844-8766-4DCA-A3C8-1C0D627D398F}</Property>
 				<Property Name="INST_productName" Type="Str">Get Latest NewFI</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.4</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.5</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">16008013</Property>
 				<Property Name="MSI_arpCompany" Type="Str">GE Appliances, a Haier company</Property>
