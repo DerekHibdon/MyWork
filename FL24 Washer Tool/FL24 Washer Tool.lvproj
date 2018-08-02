@@ -14,9 +14,7 @@
 		<Item Name="Common" Type="Folder" URL="../../../Common">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="PC Dot Net" Type="Folder" URL="../../../../Automation/DLLs/PC Dot Net">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
+		<Item Name="PC Dot Net" Type="Folder"/>
 		<Item Name="FL24 Washer Tool" Type="Folder" URL="..">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -326,6 +324,10 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="2015 VA Washer.lvlib" Type="Library" URL="../../../Automation/Product Specific/Clothes Care/2015 VA Washer/Projects/2015 VA Washer.lvlib"/>
+			<Item Name="GeaCommunication.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/GeaCommunication.dll"/>
+			<Item Name="Programming.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/Programming.dll"/>
+			<Item Name="Encoding.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/Encoding.dll"/>
+			<Item Name="Utilities.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/Utilities.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FL24 Washer Tool Installer" Type="Installer">
@@ -437,7 +439,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E468E190-DB2A-4897-80BC-278DC7B6BEF9}</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">FL24 Washer Tool Main.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/builds/NI_AB_PROJECTNAME/FL24 Washer Tool Main.exe</Property>
