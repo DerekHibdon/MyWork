@@ -11,7 +11,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="PC Dot Net" Type="Folder"/>
+		<Item Name="PC Dot Net" Type="Folder" URL="/C/Automation/DLLs/PC Dot Net">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="FL24 Washer Tool" Type="Folder" URL="..">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -152,10 +154,6 @@
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="GeaCommunication.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/GeaCommunication.dll"/>
-			<Item Name="Programming.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/Programming.dll"/>
-			<Item Name="Encoding.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/Encoding.dll"/>
-			<Item Name="Utilities.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/Utilities.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FL24 Washer Tool EXE" Type="EXE">
@@ -172,7 +170,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E468E190-DB2A-4897-80BC-278DC7B6BEF9}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">11</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">FL24 Washer Tool Main.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/builds/NI_AB_PROJECTNAME/FL24 Washer Tool Main.exe</Property>
@@ -184,7 +182,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/FL24 Washer Tool/Laundry Tool 2.0 Support/icon/washing_machine_R5B_icon.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EC1F42B7-2BD5-4259-A21D-892328D41966}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E1C33430-D01F-4FAD-9591-EDF2A9CF19A7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/FL24 Washer Tool/FL24 Washer Tool Main.vi</Property>
@@ -193,11 +191,110 @@
 				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/PC Dot Net/GeaCommunication.dll</Property>
+				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/PC Dot Net/GeaService.exe</Property>
+				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/PC Dot Net/GeaService.exe.config</Property>
+				<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/PC Dot Net/InterProcessCommunication.dll</Property>
+				<Property Name="Source[13].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/PC Dot Net/IronPython.dll</Property>
+				<Property Name="Source[14].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/My Computer/PC Dot Net/IronPython.Modules.dll</Property>
+				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/PC Dot Net/IronPython.SQLite.dll</Property>
+				<Property Name="Source[16].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/My Computer/PC Dot Net/IronPython.Wpf.dll</Property>
+				<Property Name="Source[17].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[18].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/My Computer/PC Dot Net/Logging.dll</Property>
+				<Property Name="Source[18].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/My Computer/PC Dot Net/Microsoft.Dynamic.dll</Property>
+				<Property Name="Source[19].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/LabVIEW_GEA2_Toolkit.lvlibp</Property>
 				<Property Name="Source[2].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/My Computer/PC Dot Net/Microsoft.Scripting.AspNet.dll</Property>
+				<Property Name="Source[20].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/My Computer/PC Dot Net/Microsoft.Scripting.dll</Property>
+				<Property Name="Source[21].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[22].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[22].itemID" Type="Ref">/My Computer/PC Dot Net/Microsoft.Scripting.Metadata.dll</Property>
+				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[23].itemID" Type="Ref">/My Computer/PC Dot Net/PC.NET.md</Property>
+				<Property Name="Source[23].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[24].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[24].itemID" Type="Ref">/My Computer/PC Dot Net/PCDotNet.exe</Property>
+				<Property Name="Source[24].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[25].itemID" Type="Ref">/My Computer/PC Dot Net/PCDotNet.exe.config</Property>
+				<Property Name="Source[25].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[26].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[26].itemID" Type="Ref">/My Computer/PC Dot Net/Programming.dll</Property>
+				<Property Name="Source[26].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[27].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[27].itemID" Type="Ref">/My Computer/PC Dot Net/ScriptHost.exe</Property>
+				<Property Name="Source[27].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[28].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[28].itemID" Type="Ref">/My Computer/PC Dot Net/ScriptHost.exe.config</Property>
+				<Property Name="Source[28].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[29].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[29].itemID" Type="Ref">/My Computer/PC Dot Net/Scripting.dll</Property>
+				<Property Name="Source[29].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/PC Dot Net/CommandLine.dll</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[30].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[30].itemID" Type="Ref">/My Computer/PC Dot Net/UiUtilities.dll</Property>
+				<Property Name="Source[30].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[31].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[31].itemID" Type="Ref">/My Computer/PC Dot Net/UsbGeaAdapter.dll</Property>
+				<Property Name="Source[31].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[32].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[32].itemID" Type="Ref">/My Computer/PC Dot Net/UsbHid.dll</Property>
+				<Property Name="Source[32].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[33].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[33].itemID" Type="Ref">/My Computer/PC Dot Net/Utilities.dll</Property>
+				<Property Name="Source[33].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[34].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[34].itemID" Type="Ref">/My Computer/PC Dot Net/XInclude.dll</Property>
+				<Property Name="Source[34].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[35].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[35].itemID" Type="Ref">/My Computer/PC Dot Net/XPointer.dll</Property>
+				<Property Name="Source[35].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/PC Dot Net/Encoding.dll</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/PC Dot Net/ERD Definitions.md</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/PC Dot Net/ERD GUI.md</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/PC Dot Net/ErdCommunication.Controls.dll</Property>
+				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/PC Dot Net/ErdCommunication.dll</Property>
+				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/PC Dot Net/GeaCommunication.Controls.dll</Property>
+				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">36</Property>
 				<Property Name="TgtF_companyName" Type="Str">GE Appliances, a Haier company</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">FL24 Washer Tool EXE</Property>
 				<Property Name="TgtF_internalName" Type="Str">FL24 Washer Tool EXE</Property>
@@ -266,7 +363,7 @@
 				<Property Name="INST_buildSpecName" Type="Str">FL24 Washer Tool Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{20AD8FD4-E699-4BE8-BFC6-0DA22A86CC4F}</Property>
 				<Property Name="INST_productName" Type="Str">FL24 Washer Tool</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.4</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.5</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">16008013</Property>
 				<Property Name="MSI_arpCompany" Type="Str">GE Appliances, a Haier company</Property>
