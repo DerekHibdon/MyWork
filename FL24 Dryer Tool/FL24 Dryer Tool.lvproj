@@ -20,9 +20,7 @@
 		<Item Name="VALEW" Type="Folder" URL="../../../Automation/Product Specific/Clothes Care/2015 VA Washer/Product Testcode/VALEW">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="PC Dot Net" Type="Folder" URL="../../../../Automation/DLLs/PC Dot Net">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
+		<Item Name="PC Dot Net" Type="Folder"/>
 		<Item Name="GEA2 Message Conversion" Type="Folder" URL="../../../Common/GEA2 Message Conversion">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -161,6 +159,10 @@
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="GeaCommunication.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/GeaCommunication.dll"/>
+			<Item Name="Programming.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/Programming.dll"/>
+			<Item Name="Encoding.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/Encoding.dll"/>
+			<Item Name="Utilities.dll" Type="Document" URL="/C/Automation/DLLs/PC Dot Net/Utilities.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FL24 Dryer Tool EXE" Type="EXE">
@@ -178,7 +180,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B3D482CD-C45F-40C1-9670-DC2891EE2A9A}</Property>
-				<Property Name="Bld_version.build" Type="Int">149</Property>
+				<Property Name="Bld_version.build" Type="Int">150</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">FL24 Dryer Tool Main.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/builds/NI_AB_PROJECTNAME/FL24 Dryer Tool Main.exe</Property>
@@ -372,7 +374,7 @@
 				<Property Name="INST_buildSpecName" Type="Str">FL24 Dryer Tool Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{EEA90182-4D4B-4960-8040-7E6D0AAA871C}</Property>
 				<Property Name="INST_productName" Type="Str">FL24 Dryer Tool </Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.14</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.15</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">16008013</Property>
 				<Property Name="MSI_arpCompany" Type="Str">GE Appliances, a Haier company</Property>

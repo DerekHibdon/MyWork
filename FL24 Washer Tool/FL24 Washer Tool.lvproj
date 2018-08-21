@@ -170,7 +170,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E468E190-DB2A-4897-80BC-278DC7B6BEF9}</Property>
-				<Property Name="Bld_version.build" Type="Int">11</Property>
+				<Property Name="Bld_version.build" Type="Int">12</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">FL24 Washer Tool Main.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/builds/NI_AB_PROJECTNAME/FL24 Washer Tool Main.exe</Property>
@@ -363,7 +363,7 @@
 				<Property Name="INST_buildSpecName" Type="Str">FL24 Washer Tool Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{20AD8FD4-E699-4BE8-BFC6-0DA22A86CC4F}</Property>
 				<Property Name="INST_productName" Type="Str">FL24 Washer Tool</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.5</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.6</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">16008013</Property>
 				<Property Name="MSI_arpCompany" Type="Str">GE Appliances, a Haier company</Property>
