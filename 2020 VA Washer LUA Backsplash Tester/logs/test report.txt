@@ -1,0 +1,72 @@
+
+***********************************************************************************************
+[09_22_06_AM] [06_23_2020]
+Test sequence started on Model MA-GTW680BSJ0WS
+User confirmed power and GEA2 comm connected
+GEA2 Comm Initialized
+Personality/Version Test FAILED.  Expected Version 02 0B 05 1A 05 1A 01 00, but 00 00 00 00 06 05 01 00 is currently set. 
+Button Press Test PASSED
+LED Test PASSED
+ADC Knob Test PASSED
+Pressure Sensor Test PASSED
+Test Complete at [09_23_11_AM] [06_23_2020]
+Test FAILED
+***********************************************************************************************
+[09_42_40_AM] [06_23_2020]
+Test sequence started on Model GTW680BSJ0WS
+User confirmed power and GEA2 comm connected
+GEA2 Comm Initialized
+Personality/Version Test FAILED.  Expected Version 04 03 06 05 06 05 01 00, but 00 00 00 00 06 05 01 00 is currently set. 
+Button Press Test PASSED
+LED Test PASSED
+ADC Knob Test PASSED
+Pressure Sensor Test PASSED
+Test Complete at [09_44_01_AM] [06_23_2020]
+Test FAILED
+***********************************************************************************************
+[09_45_40_AM] [06_23_2020]
+Test sequence started on Model GTW680BSJ0WS
+User confirmed power and GEA2 comm connected
+GEA2 Comm Initialized
+Personality Test Passed
+Personality set to 6. Model ID set to 0.
+Version Test Passed
+Version is 04 03 06 05 06 05 01 00.
+Button Press Test PASSED
+LED Test PASSED
+ADC Knob Test PASSED
+Pressure Sensor Test PASSED
+Test Complete at [09_46_04_AM] [06_23_2020]
+All Tests PASSED
+***********************************************************************************************
+[09_46_11_AM] [06_23_2020]
+Test sequence started on Model GTW680BSJ0WS
+User confirmed power and GEA2 comm connected
+GEA2 Comm Initialized
+Personality Test Passed
+Personality set to 6. Model ID set to 0.
+Version Test Passed
+Version is 04 03 06 05 06 05 01 00.
+Button Test FAILED
+Comparison: EQ (==) Expected Data: Button History = 00 00 00 00 00 00 3F FF Actual Data: Button History = 00 00 00 00 00 00 10 00Comparison: EQ (==) Expected Data: 16383 Actual Data: 4096
+LED Test PASSED
+ADC Knob Test PASSED
+Pressure Sensor Test PASSED
+Test Complete at [09_46_27_AM] [06_23_2020]
+Test FAILED
+***********************************************************************************************
+[09_46_37_AM] [06_23_2020]
+Test sequence started on Model GTW680BSJ0WS
+User confirmed power and GEA2 comm connected
+GEA2 Comm Initialized
+Personality Test Passed
+Personality set to 6. Model ID set to 0.
+Version Test Passed
+Version is 04 03 06 05 06 05 01 00.
+Button Press Test PASSED
+LED Test FAILED
+User indicated that ALL LEDs were not lit
+ADC Knob Test PASSED
+Pressure Sensor Test PASSED
+Test Complete at [09_47_05_AM] [06_23_2020]
+Test FAILED

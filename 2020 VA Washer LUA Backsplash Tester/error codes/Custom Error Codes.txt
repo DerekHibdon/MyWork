@@ -1,0 +1,26 @@
+********************************************************************************************************
+Error Code 5000: Personality/Version/Model ID not Found
+
+Personality, Version, or Model ID value not found in config file.  Confirm that the Personality, Version, and Model ID is defined properly for the model under test in the model configuration file.    Model Configuration.config can be found inside config folder in the tester application directory.
+
+********************************************************************************************************
+Error Code 5001: Hardware Type not Found
+
+Hardware type value not found in model configuration file.  Confirm that the hardware type is defined properly for the model number under test, inside of the model configuration file.  Hardware type is expected to be eithe "HE" or "LE" or "LE1".  Model Configuration.config can be found inside config folder in the tester application directory.
+
+********************************************************************************************************
+Error Code 5002: Config File not Found
+
+Configuration file not found. Model Configuration.config should be found inside config folder in the tester application directory.  Confirm that configuartion file is located inside the config folder inside 2015 Washer Backsplash Tester application directory. (2015 Washer Backsplash Tester\config)
+
+********************************************************************************************************
+Error Code 5003: GEA2 Init Failed
+
+Could not initialize the GEA2 communication bus.  Confirm that the Edge connection PCB for the GEA2 Communication is secure.  Another possible solution is to switch to a different USB port on your computer.
+
+********************************************************************************************************
+Error Code 5004: Number of Knobs not Found
+
+Number of Knobs value not found in model configuration file.  Confirm that the Number of Knobse is defined properly for the model number under test, inside of the model configuration file.  Number of Knobs is expected to be a numeric value of either "0", "1", "2", "3", or "4".  Model Configuration.config can be found inside config folder in the tester application directory.
+
+********************************************************************************************************
